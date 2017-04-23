@@ -1,3 +1,4 @@
+import { Recipe } from './recipe-list/recipe.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeComponent implements OnInit {
   
-
   constructor() { }
 
   ngOnInit() {
+  }
+
+  showUp = function(data: Recipe) {
+    this.itemEl = data;
   }
 
 }

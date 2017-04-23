@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  showRecipes: boolean=true;
+  toggleDisplay = function(event) {
+    this.showRecipes = event;
+  }
 }
